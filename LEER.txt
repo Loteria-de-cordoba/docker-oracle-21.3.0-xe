@@ -12,7 +12,7 @@ Para inicar ejecutar (Administrador):
 	iniciar.bat (la primera vez demora porque descarga la imagen pesa alrededor de 6gb, la necesita descargar e inicializa toda la base de datos lo que toma un tiempo.)
 
 Para frenar la base de datos ejecutar (Administrador):
-	detener.bar
+	detener.bat
 
 Las credenciales son:
 host:localhost
