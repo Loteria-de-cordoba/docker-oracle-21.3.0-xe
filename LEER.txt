@@ -9,7 +9,14 @@ Clonar el siguiente directorio
    https://github.com/Loteria-de-cordoba/docker-oracle-21.3.0-xe
 
 Para inicar ejecutar (Administrador):
-	iniciar.bat (la primera vez demora porque descarga la imagen q pesa alreddedor de 6gb e inicializa toda la base de datos lo que toma un tiempo.)
+	iniciar.bat (la primera vez demora porque descarga la imagen pesa alrededor de 6gb, la necesita descargar e inicializa toda la base de datos lo que toma un tiempo.)
 
 Para frenar la base de datos ejecutar (Administrador):
 	detener.bar
+
+Las credenciales son:
+host:localhost
+port: 1521
+sid:xe
+usaurio:system
+clave:usuario
