@@ -1,0 +1,24 @@
+version: '1.0'
+services:
+  oracle-db:
+    image: eminemma/database-oracle-21.3.0-xe:first
+    environment:
+      - ORACLE_SID=xe
+      - ORACLE_PDB=xe
+      - ORACLE_PWD=usuario
+      - ORACLE_CHARACTERSET=AL32UTF8
+    ports:
+      - '1521:1521'
+      - '5500:5500'
+    volumes:
+      - '/D:/dev/docker/oracle/disco:/opt/oracle/oradata'
+    healthcheck:
+      test: ["CMD", "sqlplus", "-L", "sys/usuario@//localhost:1521/xe as sysdba", "@healthcheck.sql"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+volumes:
+  oracle-data:
+  oracle-backup:
+
