@@ -1,15 +1,15 @@
 Instalar oracle 21.3.0 mediante docker, docker es un tipo de virtualizacion
 
 Requerimientos: 
-1) tener virtualizacionn habilitada.
+1) tener virtualizacionn habilitada. Fijarse requerimientos https://docs.docker.com/desktop/install/windows-install/
 2) Instalar docker desktop para windows 
 	https://www.docker.com/
-	https://docs.docker.com/desktop/install/windows-install/
+	
 Clonar el siguiente directorio 
    https://github.com/Loteria-de-cordoba/docker-oracle-21.3.0-xe
-Abrir terminal y posicionarse sobre el directorio clonado
-Ejecutar el siguiente comando (la primera vez demora porque descarga la imagen q pesa alreddedor de 6gb e inicializa toda la base de datos lo que toma un tiempo.)
-	docker compose up 
 
-Para frenar el contenedor
-	docker compose stop	
+Para inicar ejecutar (Administrador):
+	iniciar.bat (la primera vez demora porque descarga la imagen q pesa alreddedor de 6gb e inicializa toda la base de datos lo que toma un tiempo.)
+
+Para frenar la base de datos ejecutar (Administrador):
+	detener.bar
