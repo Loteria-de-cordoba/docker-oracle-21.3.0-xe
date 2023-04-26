@@ -11,7 +11,7 @@ services:
       - '1521:1521'
       - '5500:5500'
     volumes:
-      - '/D:/dev/docker/oracle/disco:/opt/oracle/oradata'
+      - './disco:/opt/oracle/oradata'
     healthcheck:
       test: ["CMD", "sqlplus", "-L", "sys/usuario@//localhost:1521/xe as sysdba", "@healthcheck.sql"]
       interval: 30s
